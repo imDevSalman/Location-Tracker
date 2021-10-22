@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobile_container"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/mobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_container">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobile_edt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@id/mobile_container"
+        app:layout_constraintStart_toStartOf="@id/mobile_container"
+        app:layout_constraintTop_toBottomOf="@id/mobile_container" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

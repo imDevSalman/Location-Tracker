@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LocationTracker</string>
+    <string name="login">Login</string>
+    <string name="mobile">Mobile</string>
+    <string name="name">Name</string>
+
+    <string name="google_maps_key">AIzaSyA9KbAdZfEFI8vk8QFmRlqT3zX388QnxKc</string>
+    <string name="permission_text">In order for this app to work properly, it needs to access this device\'s location</string>
+    <string name="grant_permission">Grant Permission</string>
+</resources>
